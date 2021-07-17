@@ -10997,3 +10997,56 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+
+.cursor::before {
+    content: "|";
+    /* font-weight: bolder; */
+    color: transparent;
+    background-color: darkorange;
+    animation: blink-caret 0.8s ease infinite;
+    -moz-animation: blink-caret 0.8s ease infinite;
+    -o-animation: blink-caret 0.8s ease infinite;
+    -webkit-animation: blink-caret 0.8s ease infinite;
+  }
+  
+  @keyframes blink-caret {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes blink-caret {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-moz-keyframes blink-caret {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
+  @-webkit-keyframes blink-caret {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  

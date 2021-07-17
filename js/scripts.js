@@ -31,4 +31,11 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    const typer = document.getElementById('typer');
+    let sheet = Typewriter.feed(typer);
+    console.log(sheet);
+    Typewriter.type(sheet);
+
+
 });
+
